@@ -47,5 +47,7 @@ public class Pet {
         this.id = id;
     }
 
-    
+    public String toString() {
+        return "Nome: " + nome + " ID: " + id + " Idade: " + idade + " Raça: " + raca;
+    }
 }
