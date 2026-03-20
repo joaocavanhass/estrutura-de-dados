@@ -1,9 +1,10 @@
-package aula1203.ListaSimplesmenteLigada.lista;
-
-import aula1203.ListaSimplesmenteLigada.modelo.Produto;
-
 public class Lista {
     private No inicio, aux, atual;//referencias
+
+    /**
+     * Insere um nó na lista SimplesmenteLigada.
+     * @param produto Produto
+     */
     
     public void inserir (Produto produto) {
          if (inicio == null) {// lista vazia
@@ -16,6 +17,9 @@ public class Lista {
         }
     }
 
+    /**
+     * 
+     */
     public void exibir() {
         No e = inicio;
         while (e != null) {
@@ -23,6 +27,6 @@ public class Lista {
             e = e.getProx();
         }
     }
-
+    
 
     }

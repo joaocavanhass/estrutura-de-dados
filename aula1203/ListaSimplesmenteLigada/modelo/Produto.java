@@ -1,5 +1,3 @@
-package aula1203.ListaSimplesmenteLigada.modelo;
-
 public class Produto {
     private String nome;
     private double preco;

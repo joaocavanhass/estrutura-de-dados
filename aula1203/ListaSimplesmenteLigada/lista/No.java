@@ -1,7 +1,3 @@
-package aula1203.ListaSimplesmenteLigada.lista;
-
-import aula1203.ListaSimplesmenteLigada.modelo.Produto;
-
 public class No {
     private Produto produto;
     private No prox;
