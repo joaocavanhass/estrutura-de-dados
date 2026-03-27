@@ -27,6 +27,31 @@ public class Lista {
             e = e.getProx();
         }
     }
-    
+    public boolean remover(int id) {
+        No remov = inicio, anterior = inicio;
+        while (remov != null) {
+            if (id == remov.getProduto().getId()) {
+                break;
+            }
+            anterior = remov;
+            remov = remov.getProx();
+        }
+        if (remov != null) {
+            if (remov == inicio) {
+                inicio = remov.getProx();
+                remov.setProx(null);
+            } else if (remov == atual) {
+                aux = anterior;
+                atual = anterior;
+                anterior.setProx(null);
+            } else {
+                anterior.setProx(remov.getProx());
+                remov.setProx(null);
+            }
 
+
+            return true;
+        }
+        return false;
     }
+}
