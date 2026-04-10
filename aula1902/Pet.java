@@ -1,4 +1,3 @@
-package aula1902;
 
 public class Pet {
     private String raca, nome;
